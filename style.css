@@ -1,0 +1,491 @@
+/* ---------------- Style reset --------------- */
+
+html {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'EB Garamond', serif;
+    background-color: #f4f4f4;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #d39521;
+    text-shadow: 4px 4px 2px #040939;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 1.1%;
+}
+
+/* -------------- Universal styles ------------ */
+
+body {
+    max-width: 2000px;
+    margin: auto;
+}
+
+.button a {
+    border: solid 2px #fcdd9a;
+    border-radius: 8px;
+    padding: 0px 10px;
+    font-weight: 500;
+    color: #fcdd9a;
+}
+
+.button a:hover {
+    background-color: #31537f;
+    border: solid 2px #d39521;
+    color: #d39521;
+}
+
+.button a:active {
+    border: solid 2px #fcdd9a;
+    color: #fcdd9a;
+    background-color: unset;
+    opacity: 0.5;
+}
+
+/* ---------------- Header ------------------- */
+
+header {
+    margin-top: 0.6%;
+    width: 100%;
+    max-width: 2000px;
+    box-sizing: border-box;
+    background-image: linear-gradient(#274469, #ffffff1a, #243f61), url(./Photos/banner2.jpg);
+    background-position: bottom 80% center;
+    border: 3px solid #b4801f;
+    }
+
+.logo-container {
+    width: 5%;
+    min-width: 60px;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.logo-container img {
+    max-width: 100%;
+    border: black solid 1px;
+    border-radius: 50%;
+    box-shadow: 4px 2px 4px #282727;
+}
+
+.top-buttons-container {
+    float: right;
+    width: 73%;
+    margin-top: 25px;
+}
+
+.top-buttons-container ul {
+    display: flex;
+    justify-content: end;
+}
+
+.link {
+    padding-right: 4%;
+}
+
+.banner-name {
+    margin: auto;
+    position: relative;
+}
+
+.banner-name p {
+    font-size: 3.3rem;
+    margin: auto;
+    text-align: center;
+    color: #d39521;
+    text-shadow: 4px 4px 2px #040939;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.banner-name p span {
+    font-size: 3.8rem;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 2px #040939;
+    color: #fcdd9a;
+}
+
+.banner-slogan {
+    margin: 2% 0;
+}
+
+.banner-slogan ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner-slogan li {
+    margin: 0 11%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #f6cf7b;
+    text-shadow: 4px 4px 2px #040939;
+}
+
+.middle-buttons-container {
+        margin-top: 3%;
+        margin-bottom: 2%;
+}
+
+.middle-buttons-container ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.middle-buttons-container .button a {
+    font-size: 1.2rem;
+}
+
+.spacefiller {
+    height: 600px;
+}
+
+/* -------------- main -------------------------*/
+
+/* -------------- Teams ------------------------ */
+section.teams {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.6%;
+    justify-content: space-between;
+}
+
+.team {
+    width: 48.97%;
+    border: 3px solid #b4801f;
+    background: linear-gradient(#274469, #ffffff1a, #243f61);
+}
+
+.team img {
+    width: 92%;
+    object-fit: cover;
+    margin: 4% 4% 2%;
+}
+
+.team .button {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+/* -------------- Leaders ---------------------- */
+
+section.leaders {
+    margin-top: 0.6%;
+    border: 3px solid #b4801f;
+    background: linear-gradient(#274469, #ffffff1a, #243f61);
+}
+
+.person {
+    margin: 1.1%;
+}
+
+.person figcaption {
+       text-align: center;
+}
+
+.person figcaption a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #d39521;
+    text-shadow: 2px 2px 2px #040939;
+    margin: 0.1rem 0 0.2rem;
+}
+
+.person figcaption a:hover {
+    text-shadow: 5px 5px 2px #040939;
+}
+
+.person figcaption a:active {
+    color: #fcdd9a;
+    text-shadow: 2px 2px 2px #040939;
+    opacity: 0.5;
+}
+
+.person h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fcdd9a;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.profiles .person {
+    width: 17%;
+}
+
+.person .container img {
+  width: 100%;
+}
+
+/* -------------- Partners --------------------- */
+
+section.partners {
+    margin-top: 0.6%;
+    border: 3px solid #b4801f;
+    background: linear-gradient(#274469, #ffffff1a, #243f61);
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.unit {
+    width: 6%;
+    min-width: 50px;
+    margin: 3% 0;
+    
+}
+
+.unit img {
+    width: 100%;
+    border-radius: 30%;    
+}
+
+.unit img:hover {
+    box-shadow: 5px 4px 3px #45546a;
+}
+
+.unit img:active {
+    box-shadow: -5px -2px 3px #45546a;
+    opacity: 0.5;
+}
+
+/* -------------- Footer ----------------------- */
+
+footer.contacts {
+    margin: 0.6% 0;
+    border: 3px solid #b4801f;
+    background: linear-gradient(#274469, #ffffff1a, #243f61);
+}
+
+.contacts .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.contacts .left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 3% 0;
+}
+
+.contacts .text {
+    margin: 5% 0;
+}
+
+.text h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+} 
+
+.media {
+    display: flex;
+    justify-content: left;
+    margin: 5% 0;
+}
+
+.media div {
+    width: 8%;
+    margin-right: 10%;
+}
+
+.media img {
+    width: 100%;
+    min-width: 35px;
+    border: 1px solid #7d7d7d;
+    border-radius: 25%;
+}
+
+.media img:hover {
+    box-shadow: 5px 5px 3px #45546a;
+}
+
+.media img:active {
+    box-shadow: -3px -2px 3px #45546a;
+    opacity: 0.5;
+}
+
+.map {
+    width: 50%;
+}
+
+/* -------------- @media -----------------------*/
+
+@media only screen and (max-width: 1150px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    .profiles .person {
+        width: 19%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+       section.leaders, section.partners {
+        background: linear-gradient(#274469, #809bbd, #243f61);
+    }
+
+    .contacts .left {
+        width: 97%;
+        margin: 1% 0;
+        flex-direction: row;
+    }
+
+    .contacts .text {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .media {
+        flex-shrink: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        margin: 3% 0;
+    }
+
+    .media div {
+        text-align: right;
+        margin: 0;
+    }
+
+    .map {
+        width: 90%;
+        height: 340px;
+        margin: 2% 0;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .banner-slogan {
+        display: none;
+    }
+
+    .middle-buttons-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle-buttons-container {
+        margin: 0px;
+    }
+
+    .middle-buttons-container li.button {
+        margin: 2%;
+    }
+
+    .profiles .person {
+        width: 23%;
+    }
+
+    .unit {
+        margin: 3% 4%;
+    }
+
+    .contacts .left {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .top-buttons-container {
+        float: none;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .top-buttons-container ul {
+        justify-content: center;
+    }
+
+    .team {
+        width: 100%;
+    }
+
+    .map {
+            height: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+    html {
+        font-size: 16px;
+    }
+
+    .banner-name p {
+        font-size: 3rem;
+    }
+
+    .banner-name p span {
+        font-size: 3rem;
+    }
+
+    .profiles .person {
+        width: 40%;
+    }
+
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .map {
+        height: 120px;
+    }
+
+}
